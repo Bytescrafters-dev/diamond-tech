@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Image from "next/image";
 import ServiceImage1 from "@/app/assets/slider/service1.jpg";
@@ -14,9 +14,9 @@ export default function ImageSlider() {
   const [current, setCurrent] = useState(0);
   const total = images.length;
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrent((prev) => (prev + 1) % total);
-  };
+  }, []);
 
   const prevSlide = () => {
     setCurrent((prev) => (prev - 1 + total) % total);

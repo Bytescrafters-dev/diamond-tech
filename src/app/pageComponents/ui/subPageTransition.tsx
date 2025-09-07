@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Stairs from "./stairs";
 
-const SubPageTransition = ({ children }: any) => {
+const SubPageTransition = () => {
   const pathname = usePathname();
   return (
     <>
