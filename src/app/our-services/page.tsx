@@ -1,27 +1,15 @@
 import Image from "next/image";
 import { MdTv, MdSupportAgent, MdSecurity } from "react-icons/md";
-import serviceImage1 from "@/app/assets/slider/service1.jpg";
-import serviceImage2 from "@/app/assets/slider/service2.jpg";
-import serviceImage3 from "@/app/assets/slider/service3.jpg";
+import serviceImage1 from "@/app/assets/slider/service_display.jpeg";
+import serviceImage2 from "@/app/assets/slider/services_support.jpeg";
+import serviceImage3 from "@/app/assets/slider/service_call.jpg";
+
 import Link from "next/link";
 
 const services = [
   {
-    key: "menu",
-    title: "Menu Display Installation",
-    blurb:
-      "Upgrade your customer experience with professional digital menu displays that not only look great but also drive sales. We offer seamless, end-to-end installation of digital menu boards for restaurants, cafés, food trucks, and retail businesses—helping you showcase your offerings clearly and encourage customers to buy more.",
-    image: serviceImage1,
-    icon: <MdTv className="text-3xl text-accent" />,
-    bullets: [
-      "End-to-end installation & setup",
-      "Restaurants, cafés, food trucks, retail",
-      "Clearer offers, higher conversions",
-    ],
-  },
-  {
     key: "onsite",
-    title: "Onsite Support",
+    title: "IT Support",
     blurb:
       "We provide reliable onsite support for all your network-related needs, ensuring smooth setup and optimal performance. Our expert technicians handle everything from cabling and hardware installation to router and switch configurations. During hypercare periods, we offer hands-on assistance to quickly resolve issues and minimize downtime. Trust us to keep your network running securely and efficiently right from day one.",
     image: serviceImage2,
@@ -32,6 +20,21 @@ const services = [
       "Performance, reliability & security",
     ],
   },
+  {
+    key: "menu",
+    title: "Smart Display Installation",
+    blurb:
+      "Upgrade your customer experience with professional digital menu displays that not only look great but also drive sales. We offer seamless, end-to-end installation of digital menu boards for restaurants, cafés, food trucks, and retail businesses—helping you showcase your offerings clearly and encourage customers to buy more.",
+    image: serviceImage1,
+    icon: <MdTv className="text-3xl text-accent" />,
+    bullets: [
+      "Digital video signage",
+      "Indoor menu screen",
+      "Outdoor digital smart screen",
+      "Drive through menu boards",
+    ],
+  },
+
   {
     key: "managed",
     title: "Managed Services",
@@ -95,10 +98,10 @@ export default function OurServices() {
               <p className="text-gray-700 leading-relaxed">{s.blurb}</p>
 
               {s.bullets?.length ? (
-                <ul className="mt-5 grid gap-2 text-gray-700">
+                <ul className="list-disc mt-5 grid gap-2 text-gray-700 ">
                   {s.bullets.map((b, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <span className="mt-2 h-2 w-2 rounded-full bg-accent shrink-0" />
+                      <span className="mt-2 h-2 w-2 rounded-full bg-black shrink-0" />
                       <span>{b}</span>
                     </li>
                   ))}

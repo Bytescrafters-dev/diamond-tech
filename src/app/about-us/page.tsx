@@ -38,7 +38,7 @@ export default function AboutUs() {
             </h1>
             <div className="space-y-5 text-gray-700 leading-relaxed">
               <p>
-                With over 7 years of experience,{" "}
+                With over 8 years of experience,{" "}
                 <span className="font-semibold">Diamond Tech</span> has been a
                 trusted leader in delivering top-notch networking, installation,
                 and managed services to businesses of all sizes. We’re driven by
@@ -56,11 +56,11 @@ export default function AboutUs() {
             {/* Highlight cards */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
               <div className="rounded-2xl bg-white p-5 shadow-sm border border-gray-100">
-                <p className="text-3xl font-extrabold text-accent">7+</p>
+                <p className="text-3xl font-extrabold text-accent">8+</p>
                 <p className="text-sm text-gray-600">Years of experience</p>
               </div>
               <div className="rounded-2xl bg-white p-5 shadow-sm border border-gray-100">
-                <p className="text-3xl font-extrabold text-accent">150+</p>
+                <p className="text-3xl font-extrabold text-accent">69+</p>
                 <p className="text-sm text-gray-600">Projects delivered</p>
               </div>
               <div className="rounded-2xl bg-white p-5 shadow-sm border border-gray-100">
@@ -116,16 +116,27 @@ export default function AboutUs() {
             <div className="rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition">
               <h4 className="font-semibold text-lg">Networking</h4>
               <p className="text-gray-600 mt-2">
-                Reliable, scalable network design and implementation — wired,
-                wireless, and hybrid environments.
+                Reliable, scalable network design and implementation.
               </p>
+              <ul className="list-disc ml-3 mt-2">
+                <li>Wired</li>
+                <li>Wireless</li>
+                <li>Hybrid environments</li>
+              </ul>
             </div>
             <div className="rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition">
-              <h4 className="font-semibold text-lg">Installations</h4>
-              <p className="text-gray-600 mt-2">
-                Professional on-site setup: routing, switching, structured
-                cabling, CCTV, and smart office solutions.
-              </p>
+              <h4 className="font-semibold text-lg">
+                Starlink / Hardware Installations
+              </h4>
+              <p className="text-gray-600 mt-2">Professional on-site setup.</p>
+              <ul className="list-disc ml-3 mt-2">
+                <li>Routing</li>
+                <li>Server racking</li>
+                <li>Switching</li>
+                <li>CCTV</li>
+                <li>Structured cabling</li>
+                <li>Smart office solutions</li>
+              </ul>
             </div>
             <div className="rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition">
               <h4 className="font-semibold text-lg">Managed Services</h4>

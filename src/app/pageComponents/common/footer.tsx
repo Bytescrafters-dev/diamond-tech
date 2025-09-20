@@ -16,15 +16,15 @@ const Footer = () => (
           <span className="font-bold text-2xl">DIAMOND TECH</span>
         </div>
         <div className="flex flex-col gap-1 items-center md:items-start mb-5">
-          <Link href="/about">About Us</Link>
-          <Link href="/contact">Contact Us</Link>
-          <Link href="/projects">Our Projects</Link>
+          <Link href="/about-us">About Us</Link>
+          <Link href="/contact-us">Contact Us</Link>
+          <Link href="/our-services">Our Services</Link>
         </div>
         <div>
           <div className="mb-5 flex flex-col items-center md:items-start">
             <p className="mb-2 text-xl">Contact Us</p>
             <div className="flex flex-col items-center md:items-start text-sm">
-              <div>+94 771 2345</div>
+              <div>+1 226 998 5156</div>
               <div>info@diamondtech.com</div>
             </div>
           </div>
