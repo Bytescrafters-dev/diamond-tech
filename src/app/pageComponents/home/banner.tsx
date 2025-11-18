@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import BannerImage from "@/app/assets/banner.jpg";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -28,7 +29,9 @@ const Banner = () => {
             {`Diamond Tech offers cutting-edge networking and tech solutions tailored to your business needs. Explore our services and take the next step towards tech excellence.`}
           </div>
         </div>
-        <button className="primary-button">Contact Us Now</button>
+        <Link href="/contact-us">
+          <button className="primary-button">Contact Us Now</button>
+        </Link>
       </div>
     </motion.div>
   );

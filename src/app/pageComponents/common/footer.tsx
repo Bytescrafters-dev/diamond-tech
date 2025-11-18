@@ -25,7 +25,7 @@ const Footer = () => (
             <p className="mb-2 text-xl">Contact Us</p>
             <div className="flex flex-col items-center md:items-start text-sm">
               <div>+1 226 998 5156</div>
-              <div>info@diamondtech.com</div>
+              <div>ruwa360@gmail.com</div>
             </div>
           </div>
           <div className="flex flex-col items-center md:items-start md:mb-5">
@@ -61,7 +61,14 @@ const Footer = () => (
       </div>
     </div>
     <div className="border-t border-gray-700 text-center text-sm py-4 h-6">
-      Powered by <span className="font-semibold">Bytescrafters</span>
+      Powered by{" "}
+      <a
+        href="https://bytescrafters.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="font-semibold">Bytecrafters</span>
+      </a>
     </div>
   </footer>
 );

@@ -4,7 +4,6 @@ import { FaRegStar } from "react-icons/fa";
 import Image, { StaticImageData } from "next/image";
 
 type TestimonialProps = {
-  name: string;
   profileImage: StaticImageData;
   rating: number;
   description: string;
@@ -12,7 +11,6 @@ type TestimonialProps = {
 };
 
 const TestimonialCard = ({
-  name,
   profileImage,
   rating,
   description,
@@ -28,7 +26,7 @@ const TestimonialCard = ({
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-lg text-center max-w-sm mx-auto">
-      <div className="w-20 h-20 mx-auto mb-4">
+      <div className="w-20 h-20 mx-auto mb-4 items-center flex">
         <Image
           src={profileImage}
           alt={`${name} profile`}
@@ -37,8 +35,7 @@ const TestimonialCard = ({
           className="rounded-full object-cover"
         />
       </div>
-      <h3 className="text-xl font-semibold mb-1">{name}</h3>
-      <h3 className="text-sm mb-3">{company}</h3>
+      <h3 className="text-xl font-semibold mb-1">{company}</h3>
       <div className="flex justify-center mb-3 text-yellow-500">
         {[...Array(maxStars)].map((_, i) => (
           <FaRegStar

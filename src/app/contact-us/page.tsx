@@ -20,8 +20,7 @@ const ContactUs = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Example using Formspree (replace the URL below with your own endpoint)
-    const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+    const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -127,7 +126,7 @@ const ContactUs = () => {
             </div>
             <div className="flex flex-col md:grid md:grid-cols-2">
               <span className="font-semibold">Email Address</span>
-              <span>: info@diamondtech.com</span>
+              <span>: ruwa360@gmail.com</span>
             </div>
           </div>
         </div>
