@@ -29,7 +29,7 @@ const TestimonialCard = ({
       <div className="w-20 h-20 mx-auto mb-4 items-center flex">
         <Image
           src={profileImage}
-          alt={`${name} profile`}
+          alt={`${company} profile`}
           width={80}
           height={80}
           className="rounded-full object-cover"
