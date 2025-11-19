@@ -25,7 +25,7 @@ const Footer = () => (
             <p className="mb-2 text-xl">Contact Us</p>
             <div className="flex flex-col items-center md:items-start text-sm">
               <div>+1 226 998 5156</div>
-              <div>ruwa360@gmail.com</div>
+              <div>diamondtech360@gmail.com</div>
             </div>
           </div>
           <div className="flex flex-col items-center md:items-start md:mb-5">

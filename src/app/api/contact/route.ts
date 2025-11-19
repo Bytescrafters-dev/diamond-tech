@@ -1,12 +1,13 @@
-import { NextRequest, NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(request: NextRequest) {
   try {
-    const { firstName, lastName, email, contact, message } = await request.json();
+    const { firstName, lastName, email, contact, message } =
+      await request.json();
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -15,7 +16,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'info@diamondtech.com',
+      to: "info@diamondtech.com",
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
         <h3>New Contact Form Submission</h3>
@@ -30,6 +31,9 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ success: true });
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
+    return NextResponse.json(
+      { error: `${error}:Failed to send email` },
+      { status: 500 }
+    );
   }
 }

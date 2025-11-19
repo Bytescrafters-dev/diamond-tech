@@ -16,7 +16,7 @@ export default function ImageSlider() {
 
   const nextSlide = useCallback(() => {
     setCurrent((prev) => (prev + 1) % total);
-  }, []);
+  }, [total]);
 
   const prevSlide = () => {
     setCurrent((prev) => (prev - 1 + total) % total);
