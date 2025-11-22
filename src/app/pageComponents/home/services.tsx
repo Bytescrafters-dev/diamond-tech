@@ -25,7 +25,7 @@ const Team = () => (
             functional and eye-catching, ensuring your message is delivered
             effectively.
           </p>
-          <Link href="/about">
+          <Link href="/about-us">
             <button className="primary-button">Our Services</button>
           </Link>
         </div>

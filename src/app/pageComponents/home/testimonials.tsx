@@ -1,5 +1,5 @@
 import WandDigital from "@/app/assets/testimonials/WandDigital.jpg";
-import placeHolder from "@/app/assets/testimonials/place-holder.svg";
+import Netview from "@/app/assets/testimonials/netview.png";
 import SyscoFoods from "@/app/assets/testimonials/sysco-logo.jpeg";
 import TestimonialCard from "./components/testimonialCard";
 
@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     id: 3,
-    profileImage: placeHolder,
+    profileImage: Netview,
     rating: 5,
     description: `We chose Diamond Tech for our router installation, and they impressed us with their precision and expertise. Their skill in Starlink installation was an added bonus, delivering top-quality service and performance.`,
     company: "Netview Inc.",
